@@ -9,6 +9,11 @@ name: Java CI with Gradle
 
 on: [push, pull_request]
 
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:  
+      - '**'        # matches every branch
+
 jobs:
   build:
 
