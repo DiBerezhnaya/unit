@@ -7,13 +7,14 @@
 
 name: Java CI with Gradle
 
-on: [push, pull_request]
-
-  pull_request:
+on:
+  push:
     # Sequence of patterns matched against refs/heads
-    branches:  
-      - '**'        # matches every branch
-
+    branches:    
+      - main
+      - 'junit4'
+      - 'testng'
+       
 jobs:
   build:
 
